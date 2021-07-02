@@ -9,16 +9,15 @@ const Body = Matter.Body;
 
 function preload()
 {
-	starImg = loadImage("images/star.png");
-	bgImg = loadImage("images/starNight.png");
-	fairyImg = loadAnimation("images/fairy.png");
-	fairyImg2 = loadAnimation("images/fairyImage1", "images/fairyImage2");
+	starImg = loadImage("star.png");
+	bgImg = loadImage("starNight.png");
+	fairyImg = loadAnimation("fairy.png");
+	fairyImg2 = loadAnimation("fairyImage1.png", "fairyImage2.png");
 }
 
 function setup() {
 	createCanvas(800, 750);
 
-	//write code to play fairyVoice sound
 
 	fairy = createSprite(100, 550, 50, 50);
 	fairy.addAnimation("still", fairyImg);
